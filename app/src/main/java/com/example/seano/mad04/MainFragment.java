@@ -32,7 +32,7 @@ public class MainFragment extends Fragment
     public void onCreate(Bundle b)
     {
         super.onCreate(b);
-        factionList = new FactionList();
+        factionList = new FactionList(getContext());
         factionList.load();
     }
 
